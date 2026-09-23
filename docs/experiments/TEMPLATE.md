@@ -1,34 +1,34 @@
-# Experimento NNN — título corto
+# Experiment NNN — short title
 
-- **Fecha:** YYYY-MM-DD
-- **Estado:** planeado / en curso / completado
-- **Versión y build:**
-- **Equipo y configuración:** enlazar `../environment.md` y anotar diferencias
+- **Date:** YYYY-MM-DD
+- **Status:** planned / in progress / completed
+- **OS and build:**
+- **Hardware and configuration:** link to `../environment.md` and note any differences
 
-## Pregunta
+## Question
 
-¿Qué queremos averiguar?
+What are we trying to find out?
 
-## Hipótesis
+## Hypothesis
 
-¿Qué esperamos observar y por qué?
+What do we expect to observe, and why?
 
-## Preparación y cambios
+## Setup and changes
 
-Anotar comandos, archivos y modificaciones. No incluir secretos ni identificadores privados.
+Record commands, files, and modifications. Do not include secrets or private identifiers.
 
-## Procedimiento
+## Procedure
 
-Pasos suficientes para repetir la prueba.
+Steps detailed enough to repeat the test.
 
-## Resultado observado
+## Observed result
 
-Pegar el error o describir el resultado. Adjuntar referencias a capturas/logs; no subir imágenes del sistema operativo.
+Paste the error or describe the result. Link to screenshots/logs; do not upload operating system images.
 
-## Conclusión
+## Conclusion
 
-¿Qué demuestra el resultado y qué no demuestra?
+What does the result demonstrate, and what does it not demonstrate?
 
-## Siguiente paso
+## Next step
 
-Una hipótesis o prueba concreta.
+One concrete hypothesis or test.

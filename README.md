@@ -1,47 +1,47 @@
 # GoldenGate-x86-Research
 
-Investigación documentada sobre si **macOS 27 “Golden Gate”** puede arrancar o ejecutar partes de su sistema en hardware **x86-64 no soportado**, usando como equipo de referencia un AMD Ryzen 7 5700G.
+Documenting an investigation into whether **macOS 27 “Golden Gate”** can boot or run parts of its system on **unsupported x86-64 hardware**, using an AMD Ryzen 7 5700G as the reference machine.
 
-> Proyecto experimental e independiente. No está afiliado a Apple ni a OpenCore. No distribuye macOS ni imágenes del sistema.
+> This is an independent experimental project. It is not affiliated with Apple or OpenCore. It does not distribute macOS or operating system images.
 
-## Objetivo
+## Goal
 
-Determinar, con pruebas reproducibles, qué componentes de Golden Gate conservan compatibilidad con x86-64 y hasta qué etapa puede llegar el arranque en hardware no soportado. Separaremos los problemas de arquitectura/arranque de los controladores y la aceleración gráfica.
+Determine, through reproducible experiments, which Golden Gate components retain x86-64 compatibility and how far the system can boot on unsupported hardware. We will distinguish architecture and boot issues from driver support and graphics acceleration.
 
-Documentaremos también los intentos fallidos. Un resultado negativo es útil si se anotan la configuración, los cambios y el error observado.
+Failed attempts will be documented too. A negative result is useful when the configuration, changes, and observed error are recorded.
 
-## Estado actual
+## Current status
 
-- **Tahoe 26.3:** funciona actualmente en el equipo de referencia.
-- **Tahoe 26.6:** funcionó anteriormente en ese mismo equipo.
-- **Golden Gate 27:** todavía no se ha probado en el Ryzen.
-- **Golden Gate 27.0 (build 26A428):** apareció en el listado de productos de `gibMacOS`; confirmar en la bitácora si la descarga terminó y registrar su hash antes de analizar archivos.
-- **Tahoe 26.6 (build 25G72):** apareció en el mismo listado. La conversación previa indicó que se inició su descarga; el estado final está pendiente de confirmar.
+- **Tahoe 26.3:** currently runs on the reference machine.
+- **Tahoe 26.6:** previously ran on the same machine.
+- **Golden Gate 27:** has not yet been tested on the Ryzen system.
+- **Golden Gate 27.0 (build 26A428):** appeared in the `gibMacOS` product list. Confirm in the timeline whether the download completed, and record its hash before analyzing files.
+- **Tahoe 26.6 (build 25G72):** appeared in the same product list. The earlier conversation said its download was started; the final status still needs confirmation.
 
-Los detalles conocidos y lo que falta confirmar están en [docs/environment.md](docs/environment.md) y [docs/timeline.md](docs/timeline.md).
+Known details and open questions are tracked in [docs/environment.md](docs/environment.md) and [docs/timeline.md](docs/timeline.md).
 
-## Equipo de referencia
+## Reference hardware
 
-| Componente | Información conocida |
+| Component | Known information |
 |---|---|
 | CPU | AMD Ryzen 7 5700G |
-| Gráficos | Radeon integrada del Ryzen 7 5700G |
-| Memoria | 32 GB RAM |
-| Sistema funcional actual | macOS Tahoe 26.3 |
-| Sistema probado anteriormente | macOS Tahoe 26.6 |
+| Graphics | Radeon integrated graphics in the Ryzen 7 5700G |
+| Memory | 32 GB RAM |
+| Currently working OS | macOS Tahoe 26.3 |
+| Previously tested OS | macOS Tahoe 26.6 |
 
-Los datos desconocidos (placa, SMBIOS, configuración de OpenCore, almacenamiento y periféricos) se añadirán cuando se recopilen. No se publicarán números de serie ni identificadores privados.
+Unknown details (motherboard, SMBIOS, OpenCore configuration, storage, and peripherals) will be added when collected. Serial numbers and private identifiers must not be published.
 
-## Plan de investigación
+## Research plan
 
-1. Registrar el entorno y conservar copias de seguridad; no experimentar sobre la instalación funcional.
-2. Confirmar procedencia, versión/build y SHA-256 de cada descarga. Mantener los instaladores e imágenes localmente.
-3. Inspeccionar y comparar componentes de Tahoe 26.3/26.6 y Golden Gate 27 (por ejemplo, arquitectura de binarios y presencia de componentes x86-64).
-4. Formular una hipótesis verificable antes de cada cambio.
-5. Hacer un experimento por vez, guardar el registro y documentar el resultado, incluidos los fallos.
-6. Publicar métodos y hallazgos reproducibles, distinguiendo observaciones de hipótesis.
+1. Record the environment and keep backups; do not experiment on the working installation.
+2. Verify the source, version/build, and SHA-256 of each download. Keep installers and images locally.
+3. Inspect and compare Tahoe 26.3/26.6 and Golden Gate 27 components (for example, binary architectures and the presence of x86-64 components).
+4. State a testable hypothesis before each change.
+5. Change one thing at a time, keep a record, and document the result, including failures.
+6. Publish reproducible methods and findings, distinguishing observations from hypotheses.
 
-## Estructura
+## Repository layout
 
 ```text
 README.md
@@ -54,17 +54,17 @@ docs/
     TEMPLATE.md
 ```
 
-## Privacidad y archivos grandes
+## Privacy and large files
 
-Este repositorio guarda documentación, scripts pequeños y hashes. **No subir** imágenes RAW, DMG, PKG, instaladores, firmware ni otros archivos de macOS. Revisa `git status` antes de cada commit; `.gitignore` excluye formatos habituales, pero no sustituye esa revisión. No publiques datos personales, números de serie, UUID, tokens ni archivos EFI con identificadores privados.
+This repository stores documentation, small scripts, and hashes. **Do not upload** RAW images, DMGs, PKGs, installers, firmware, or other macOS files. Keep them locally. `.gitignore` excludes common formats, but review `git status` before every commit. Do not publish personal data, serial numbers, UUIDs, tokens, or EFI files containing private identifiers.
 
-## Cómo contribuir a la bitácora
+## Keeping the research log
 
-- Añade los hechos nuevos a `docs/timeline.md`.
-- Registra conclusiones verificables en `docs/findings.md`.
-- Copia `docs/experiments/TEMPLATE.md` para cada prueba y usa nombres como `001-tahoe-26-6-baseline.md`.
-- Marca claramente `Observación`, `Hipótesis` y `Conclusión`; no presentes una suposición como hecho.
+- Add new events to `docs/timeline.md`.
+- Record verifiable conclusions in `docs/findings.md`.
+- Copy `docs/experiments/TEMPLATE.md` for each test and use names such as `001-tahoe-26-6-baseline.md`.
+- Label `Observation`, `Hypothesis`, and `Conclusion` clearly; do not present assumptions as facts.
 
-## Licencia
+## License
 
-Aún no se ha elegido una licencia. Hasta que se añada una, no se concede permiso general para reutilizar el contenido del repositorio.
+No license has been selected yet. Until one is added, no general permission is granted to reuse this repository's content.

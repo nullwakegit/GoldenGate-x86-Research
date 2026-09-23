@@ -1,14 +1,14 @@
-# Cronología
+# Timeline
 
-Registro breve de hitos. Fechas exactas pendientes donde no se conocen.
+A short record of milestones. Exact dates are marked as unknown when unavailable.
 
-| Fecha | Hito | Estado / evidencia |
+| Date | Milestone | Status / evidence |
 |---|---|---|
-| Pendiente | Tahoe 26.3 instalado en Ryzen 7 5700G | Funciona actualmente, según el usuario; build exacto pendiente |
-| Hace unos meses (fecha pendiente) | Tahoe 26.6 usado en el mismo equipo | El usuario informa que funcionaba bien; build 25G72 es el listado de catálogo, falta confirmar que fuera esa instalación |
-| 2026-09-23 | `gibMacOS` mostró productos Tahoe 26.6 (25G72), Tahoe 26.6.2 (25G83) y Golden Gate 27.0 (26A428) | IDs de catálogo: 140-71750, 140-93587 y 142-15488; los datos provienen de la salida compartida en la conversación |
-| 2026-09-23 | Se inició el trabajo de documentación del proyecto | Golden Gate aún no se ha probado en el equipo |
+| Unknown | Tahoe 26.3 installed on Ryzen 7 5700G | User reports it currently works; exact build not recorded |
+| A few months ago (exact date unknown) | Tahoe 26.6 used on the same machine | User reports it worked well; build 25G72 was listed in the catalog, but whether it was the same installation is unconfirmed |
+| 2026-09-23 | `gibMacOS` listed Tahoe 26.6 (25G72), Tahoe 26.6.2 (25G83), and Golden Gate 27.0 (26A428) | Catalog IDs: 140-71750, 140-93587, and 142-15488; based on output shared in the conversation |
+| 2026-09-23 | Project documentation started | Golden Gate has not yet been tested on the machine |
 
-## Para añadir una entrada
+## Adding an entry
 
-Anota fecha, acción, resultado y evidencia (salida, captura o hash). Si un dato viene de memoria o está por confirmar, indícalo explícitamente.
+Record the date, action, result, and evidence (output, screenshot, or hash). If something comes from memory or remains unverified, label it clearly.

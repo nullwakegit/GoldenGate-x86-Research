@@ -1,20 +1,20 @@
-# Hallazgos
+# Findings
 
-Esta página contiene resultados respaldados por observaciones. Las hipótesis aún no verificadas van en la ficha de experimento correspondiente.
+This page contains results supported by observations. Unverified hypotheses belong in the relevant experiment record.
 
-## Confirmado por el usuario
+## User-reported facts
 
-- Tahoe 26.3 funciona actualmente en el Ryzen 7 5700G con gráficos integrados y 32 GB de RAM.
-- Tahoe 26.6 funcionó anteriormente en ese mismo equipo.
-- Golden Gate 27 no se ha probado todavía en ese equipo.
+- Tahoe 26.3 currently runs on the Ryzen 7 5700G with integrated graphics and 32 GB RAM.
+- Tahoe 26.6 previously ran on the same machine.
+- Golden Gate 27 has not yet been tested on that machine.
 
-## Confirmado por la salida compartida de `gibMacOS`
+## Confirmed by the shared `gibMacOS` output
 
-El 2026-09-23 la lista mostraba Golden Gate 27.0 (26A428), Tahoe 26.6 (25G72) y Tahoe 26.6.2 (25G83), entre otros productos. Esto confirma que aparecieron en ese listado; por sí solo no confirma que los paquetes se descargaran completos ni su integridad.
+On 2026-09-23, the list showed Golden Gate 27.0 (26A428), Tahoe 26.6 (25G72), and Tahoe 26.6.2 (25G83), among other products. This confirms that they appeared in that list; by itself, it does not confirm that the packages downloaded completely or are intact.
 
-## Pendiente
+## Open questions
 
-- Build exacto de la instalación actual de Tahoe 26.3.
-- Si la descarga de Tahoe 26.6 y Golden Gate 27 terminó correctamente.
-- SHA-256 y procedencia verificable de cada copia descargada.
-- Arquitecturas presentes en los componentes de Golden Gate y posibilidad de arranque en x86-64.
+- Exact build of the current Tahoe 26.3 installation.
+- Whether the Tahoe 26.6 and Golden Gate 27 downloads completed successfully.
+- SHA-256 and verifiable source for each downloaded copy.
+- Architectures present in Golden Gate components and whether it can boot on x86-64.
