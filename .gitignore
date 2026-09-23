@@ -1,0 +1,28 @@
+# Imágenes, instaladores y archivos grandes de macOS: conservar localmente
+*.raw
+*.img
+*.dmg
+*.pkg
+*.iso
+*.ipsw
+*.chunklist
+*.sparseimage
+*.sparsebundle/
+Install macOS*.app/
+
+# Firmware, imágenes de disco y archivos de máquina virtual
+*.rom
+*.bin
+*.efi
+*.vmdk
+*.vdi
+*.qcow2
+*.ova
+
+# Resultados temporales, logs locales y secretos
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+!.env.example
