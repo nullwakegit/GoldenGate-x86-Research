@@ -34,7 +34,9 @@ Golden Gate 27.0 (26A428, product 142-15488) also completed downloading on 2026-
 | Tahoe 26.6 (25G72) | `d9ce954992b47d8350ec9ef913ad355035cdba04f511e695b52239fe48af5942` |
 | Golden Gate 27.0 (26A428) | `e74aa9c2b31d0d764050874aabc4e761e12ef21e615dababf1bb2527a44cf7f8` |
 
-These hashes identify the local files and help compare copies; they do not independently prove authenticity. Package signature checks are still pending.
+These hashes identify the local files and help compare copies; they do not independently prove authenticity.
+
+`pkgutil --check-signature` reported `Status: signed Apple Software` for both `InstallAssistant.pkg` files. Both outputs showed the Apple Software Update → Apple Software Update Certification Authority → Apple Root CA certificate chain. No package has been installed.
 
 When a download is confirmed, complete a record like this (do not upload the file):
 
