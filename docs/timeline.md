@@ -12,6 +12,7 @@ A short record of milestones. Exact dates are marked as unknown when unavailable
 | 2026-09-24 | Local SHA-256 hashes calculated for Tahoe 26.6 and Golden Gate 27.0 `InstallAssistant.pkg` files | Hashes recorded in `environment.md`; package signature checks remain pending |
 | 2026-09-24 | Apple package signatures checked for both `InstallAssistant.pkg` files | `pkgutil --check-signature` reported `signed Apple Software`; details recorded in `environment.md` |
 | 2026-09-24 | Installer sizes and free space checked before extraction | Each `InstallAssistant.pkg` is about 17 GB; data volume had 74 GiB available; nothing extracted or installed |
+| 2026-09-24 | Golden Gate installer payload listed without extraction | `pkgutil --payload-files` shows the `Install macOS 27 Golden Gate.app` bundle; system image contents not yet located |
 | 2026-09-23 | Project documentation started | Golden Gate has not yet been tested on the machine |
 
 ## Adding an entry
