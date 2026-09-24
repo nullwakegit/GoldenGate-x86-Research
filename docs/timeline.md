@@ -11,6 +11,7 @@ A short record of milestones. Exact dates are marked as unknown when unavailable
 | 2026-09-23 | Golden Gate 27.0 (26A428, product 142-15488) download completed with `gibMacOS` | Output reported five files succeeded and none failed; not tested on the Ryzen; SHA-256 verification is pending |
 | 2026-09-24 | Local SHA-256 hashes calculated for Tahoe 26.6 and Golden Gate 27.0 `InstallAssistant.pkg` files | Hashes recorded in `environment.md`; package signature checks remain pending |
 | 2026-09-24 | Apple package signatures checked for both `InstallAssistant.pkg` files | `pkgutil --check-signature` reported `signed Apple Software`; details recorded in `environment.md` |
+| 2026-09-24 | Installer sizes and free space checked before extraction | Each `InstallAssistant.pkg` is about 17 GB; data volume had 74 GiB available; nothing extracted or installed |
 | 2026-09-23 | Project documentation started | Golden Gate has not yet been tested on the machine |
 
 ## Adding an entry
