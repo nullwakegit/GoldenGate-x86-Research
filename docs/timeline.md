@@ -8,6 +8,7 @@ A short record of milestones. Exact dates are marked as unknown when unavailable
 | A few months ago (exact date unknown) | Tahoe 26.6 used on the same machine | User reports it worked well; build 25G72 was listed in the catalog, but whether it was the same installation is unconfirmed |
 | 2026-09-23 | `gibMacOS` listed Tahoe 26.6 (25G72), Tahoe 26.6.2 (25G83), and Golden Gate 27.0 (26A428) | Catalog IDs: 140-71750, 140-93587, and 142-15488; based on output shared in the conversation |
 | 2026-09-23 | Tahoe 26.6 (25G72, product 140-71750) download completed with `gibMacOS` | Output reported five files succeeded and none failed; SHA-256 verification is pending |
+| 2026-09-23 | Golden Gate 27.0 (26A428, product 142-15488) download completed with `gibMacOS` | Output reported five files succeeded and none failed; not tested on the Ryzen; SHA-256 verification is pending |
 | 2026-09-23 | Project documentation started | Golden Gate has not yet been tested on the machine |
 
 ## Adding an entry
