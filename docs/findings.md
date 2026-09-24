@@ -10,7 +10,7 @@ This page contains results supported by observations. Unverified hypotheses belo
 
 ## Confirmed by the shared `gibMacOS` output
 
-On 2026-09-23, the list showed Golden Gate 27.0 (26A428), Tahoe 26.6 (25G72), and Tahoe 26.6.2 (25G83), among other products. Tahoe 26.6 (25G72, product 140-71750) subsequently completed downloading: `gibMacOS` reported five files succeeded and none failed. This does not replace a local integrity/hash check. Golden Gate 27.0 (26A428, product 142-15488) also completed downloading; `gibMacOS` reported five files succeeded and none failed. It has not been tested on the Ryzen, and local integrity/hash checks are pending.
+On 2026-09-23, the list showed Golden Gate 27.0 (26A428), Tahoe 26.6 (25G72), and Tahoe 26.6.2 (25G83), among other products. Tahoe 26.6 (25G72, product 140-71750) subsequently completed downloading: `gibMacOS` reported five files succeeded and none failed. This does not replace a local integrity/hash check. Golden Gate 27.0 (26A428, product 142-15488) also completed downloading; `gibMacOS` reported five files succeeded and none failed. It has not been tested on the Ryzen. The local `InstallAssistant.pkg` SHA-256 values have been recorded in `environment.md`; Apple package signature checks remain pending.
 
 ## Open questions
 

@@ -27,7 +27,14 @@ The `gibMacOS` list shared in the conversation also included Tahoe 26.7 (25G229)
 
 Tahoe 26.6 (25G72, product 140-71750) completed downloading on 2026-09-23. `gibMacOS` reported success for `InstallInfo.plist`, `UpdateBrain.zip`, `InstallAssistant.pkg`, `MajorOSInfo.pkg`, and `com_apple_MobileAsset_MacSoftwareUpdate.plist`, with no failed files.
 
-Golden Gate 27.0 (26A428, product 142-15488) also completed downloading on 2026-09-23. `gibMacOS` reported success for the same five file names and no failed files. The local download folders are outside this public repository. SHA-256 verification is still pending for both downloads.
+Golden Gate 27.0 (26A428, product 142-15488) also completed downloading on 2026-09-23. `gibMacOS` reported success for the same five file names and no failed files. The local download folders are outside this public repository. SHA-256 hashes calculated locally for the `InstallAssistant.pkg` files:
+
+| Product | SHA-256 (`InstallAssistant.pkg`) |
+|---|---|
+| Tahoe 26.6 (25G72) | `d9ce954992b47d8350ec9ef913ad355035cdba04f511e695b52239fe48af5942` |
+| Golden Gate 27.0 (26A428) | `e74aa9c2b31d0d764050874aabc4e761e12ef21e615dababf1bb2527a44cf7f8` |
+
+These hashes identify the local files and help compare copies; they do not independently prove authenticity. Package signature checks are still pending.
 
 When a download is confirmed, complete a record like this (do not upload the file):
 
