@@ -13,7 +13,7 @@ A short record of milestones. Exact dates are marked as unknown when unavailable
 | 2026-09-24 | Apple package signatures checked for both `InstallAssistant.pkg` files | `pkgutil --check-signature` reported `signed Apple Software`; details recorded in `environment.md` |
 | 2026-09-24 | Installer sizes and free space checked before extraction | Each `InstallAssistant.pkg` is about 17 GB; data volume had 74 GiB available; nothing extracted or installed |
 | 2026-09-24 | Golden Gate installer payload paths searched without extraction | Saved `pkgutil --payload-files` list had no matches for `SharedSupport`, `InstallESD`, `BaseSystem`, `InstallInfo`, or `Packages`; this does not establish that OS assets are absent |
-| 2026-09-24 | Golden Gate `SharedSupport.dmg` verified | `hdiutil verify` reports checksum VALID; partition CRC32 checks verified; read-only mounting is next |
+| 2026-09-24 | Golden Gate `SharedSupport.dmg` mounted read-only | `hdiutil attach -readonly -nobrowse` mounted the HFS volume at `/Volumes/Shared Support`; installer not run |
 | 2026-09-24 | Golden Gate MobileAsset metadata inspected | Reports build 26A428 / OS 27.0, PreRelease, model J180dAP, `IsUniversal=true`, arm64e cryptex tags, and 18,373,348,416-byte download / 19,227,554,816-byte unarchived size; not direct payload architecture verification |
 | 2026-09-23 | Project documentation started | Golden Gate has not yet been tested on the machine |
 
