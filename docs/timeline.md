@@ -19,6 +19,7 @@ A short record of milestones. Exact dates are marked as unknown when unavailable
 | 2026-09-25 | Filtered ZIP inventory reviewed | First 100 matching paths include arm64e boot assets, Apple platform firmware, and `AMDFirmware/GpuUtil.efi`; this filename alone says nothing about Ryzen CPU support, and the inventory remains incomplete |
 | 2026-09-25 | AMD firmware utility architecture identified | `file` identifies `AssetData/boot/Firmware/AMDFirmware/GpuUtil.efi` as a stripped PE32+ x86-64 EFI application. This is an x86-64 EFI executable, not evidence that the macOS kernel or userspace supports Ryzen |
 | 2026-09-25 | EFI executable paths inventoried and identified | Six paths are PE32+ x86-64 EFI applications (GpuUtil, HPMUtil, and ThorUtil under both `boot/Firmware` and `boot/EFI`); `SmcFlasher.efi` is universal i386/x86-64. These are EFI tools, not macOS kernel payloads |
+| 2026-09-25 | Software-update ramdisk payload inspected | `arm64eSURamDisk.dmg` is ASN.1/IM4P (`rdsk`); `ipsw` extraction yields an APFS image. `hdiutil` does not attach the decoded payload, so its contents remain uninspected |
 | 2026-09-23 | Project documentation started | Golden Gate has not yet been tested on the machine |
 
 ## Adding an entry
