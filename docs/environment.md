@@ -21,6 +21,8 @@
 | Tahoe 26.6.2 | 25G83 | No test recorded | Product 140-93587 listed by `gibMacOS` |
 | Golden Gate 27.0 | 26A428 | Download completed; not tested on the Ryzen | Product 142-15488; `gibMacOS` reported all listed files succeeded and none failed on 2026-09-23 |
 
+The hash-named ZIP inside the read-only volume is `79e14bd03f991a2d9683f0088d018dbb70012855.zip`, matching the MobileAsset plist relative path. The first 50 ZIP entries include `AssetData/boot/kernelcache.release.mac15j` (33,638,446 bytes), `kernelcache.release.mac16j` (33,547,555 bytes), and `AssetData/usr/standalone/update/ramdisk/arm64eSURamDisk.dmg` (371,195,931 bytes). Only those first 50 entries have been reviewed; these names do not establish the architecture of the files.
+
 The `gibMacOS` list shared in the conversation also included Tahoe 26.7 (25G229). There is no record that it was downloaded or tested, so it is not part of the baseline yet.
 
 ## Record for each image
