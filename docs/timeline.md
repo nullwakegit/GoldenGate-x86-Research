@@ -15,6 +15,7 @@ A short record of milestones. Exact dates are marked as unknown when unavailable
 | 2026-09-24 | Golden Gate installer payload paths searched without extraction | Saved `pkgutil --payload-files` list had no matches for `SharedSupport`, `InstallESD`, `BaseSystem`, `InstallInfo`, or `Packages`; this does not establish that OS assets are absent |
 | 2026-09-24 | Golden Gate kernelcache headers inspected | Headers show `IM4P` / `krnl`, descriptor `KernelManagement_host-514.0.2`, and `bvx2` LZFSE compression; architecture still needs decompression/inspection |
 | 2026-09-24 | Golden Gate MobileAsset metadata inspected | Reports build 26A428 / OS 27.0, PreRelease, model J180dAP, `IsUniversal=true`, arm64e cryptex tags, and 18,373,348,416-byte download / 19,227,554,816-byte unarchived size; not direct payload architecture verification |
+| 2026-09-25 | Two Golden Gate kernelcache payloads decompressed and identified | `ipsw img4 im4p extract` processed `kernelcache.release.mac15j` and `kernelcache.release.mac16j`; `file` identified both payloads as `Mach-O 64-bit arm64e`. This establishes the architecture of these two files only; broader x86-64 compatibility remains under investigation |
 | 2026-09-23 | Project documentation started | Golden Gate has not yet been tested on the machine |
 
 ## Adding an entry
