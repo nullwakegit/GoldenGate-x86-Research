@@ -19,3 +19,7 @@ On 2026-09-23, the list showed Golden Gate 27.0 (26A428), Tahoe 26.6 (25G72), an
 - SHA-256 and verifiable source for each downloaded copy.
 - Whether other boot-critical Golden Gate assets contain x86-64 code; inspect the complete MobileAsset ZIP listing and relevant payloads.
 - Whether Golden Gate can boot on x86-64; the two examined kernelcache payloads are arm64e, but this alone is not a complete system-wide determination.
+
+## ZIP inventory follow-up (2026-09-25)
+
+The first 100 matches from a filename filter over the MobileAsset ZIP include the two arm64e kernelcache files, `arm64eSURamDisk.dmg`, and many Apple platform firmware files. The list also contains `AssetData/boot/Firmware/AMDFirmware/GpuUtil.efi`. The name suggests an AMD GPU utility; it is not evidence that the AMD Ryzen CPU architecture is supported. The filtered output was capped at 100 lines, so it is not a complete inventory and absence of an `x86_64` filename in that excerpt does not prove no x86-64 code exists. The next check is to identify the EFI file's format/architecture and review the complete archive listing.
