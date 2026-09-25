@@ -36,7 +36,7 @@ Golden Gate 27.0 (26A428, product 142-15488) also completed downloading on 2026-
 
 These hashes identify the local files and help compare copies; they do not independently prove authenticity.
 
-`pkgutil --check-signature` reported `Status: signed Apple Software` for both `InstallAssistant.pkg` files. Both outputs showed the Apple Software Update → Apple Software Update Certification Authority → Apple Root CA certificate chain. No package has been installed. `ls -lh` showed each `InstallAssistant.pkg` at about 17 GB. Available space was 74 GiB; package extraction has not started. A read-only `pkgutil --payload-files` listing of the Golden Gate package begins with `./Applications/Install macOS 27 Golden Gate.app` and its app bundles/resources.
+`pkgutil --check-signature` reported `Status: signed Apple Software` for both `InstallAssistant.pkg` files. Both outputs showed the Apple Software Update → Apple Software Update Certification Authority → Apple Root CA certificate chain. No package has been installed. `ls -lh` showed each `InstallAssistant.pkg` at about 17 GB. Available space was 74 GiB; package extraction has not started. A read-only `pkgutil --payload-files` listing of the Golden Gate package begins with `./Applications/Install macOS 27 Golden Gate.app` and its app bundles/resources. Searching the complete saved path listing for `SharedSupport`, `InstallESD`, `BaseSystem`, `InstallInfo`, or `Packages` returned no matches. This only describes names in the package payload list; the separate downloaded metadata/assets have not yet been inspected.
 
 When a download is confirmed, complete a record like this (do not upload the file):
 
