@@ -17,6 +17,7 @@ A short record of milestones. Exact dates are marked as unknown when unavailable
 | 2026-09-24 | Golden Gate MobileAsset metadata inspected | Reports build 26A428 / OS 27.0, PreRelease, model J180dAP, `IsUniversal=true`, arm64e cryptex tags, and 18,373,348,416-byte download / 19,227,554,816-byte unarchived size; not direct payload architecture verification |
 | 2026-09-25 | Two Golden Gate kernelcache payloads decompressed and identified | `ipsw img4 im4p extract` processed `kernelcache.release.mac15j` and `kernelcache.release.mac16j`; `file` identified both payloads as `Mach-O 64-bit arm64e`. This establishes the architecture of these two files only; broader x86-64 compatibility remains under investigation |
 | 2026-09-25 | Filtered ZIP inventory reviewed | First 100 matching paths include arm64e boot assets, Apple platform firmware, and `AMDFirmware/GpuUtil.efi`; this filename alone says nothing about Ryzen CPU support, and the inventory remains incomplete |
+| 2026-09-25 | AMD firmware utility architecture identified | `file` identifies `AssetData/boot/Firmware/AMDFirmware/GpuUtil.efi` as a stripped PE32+ x86-64 EFI application. This is an x86-64 EFI executable, not evidence that the macOS kernel or userspace supports Ryzen |
 | 2026-09-23 | Project documentation started | Golden Gate has not yet been tested on the machine |
 
 ## Adding an entry
