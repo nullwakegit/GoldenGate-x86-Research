@@ -1,3 +1,5 @@
+### PROJECT TEMPORARILY CANCELLED
+
 # GoldenGate-x86-Research
 
 Documenting an investigation into whether **macOS 27 “Golden Gate”** can boot or run parts of its system on **unsupported x86-64 hardware**, using an AMD Ryzen 7 5700G as the reference machine.
